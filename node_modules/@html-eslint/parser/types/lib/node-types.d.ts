@@ -1,0 +1,36 @@
+export const NODE_TYPES: {
+    Tag: NodeTypes.Tag;
+    Text: NodeTypes.Text;
+    Doctype: NodeTypes.Doctype;
+    Comment: NodeTypes.Comment;
+    CommentOpen: NodeTypes.CommentOpen;
+    CommentClose: NodeTypes.CommentClose;
+    CommentContent: NodeTypes.CommentContent;
+    Attribute: NodeTypes.Attribute;
+    AttributeKey: NodeTypes.AttributeKey;
+    AttributeValue: NodeTypes.AttributeValue;
+    AttributeValueWrapperStart: NodeTypes.AttributeValueWrapperStart;
+    AttributeValueWrapperEnd: NodeTypes.AttributeValueWrapperEnd;
+    CloseTag: NodeTypes.CloseTag;
+    OpenTagEnd: NodeTypes.OpenTagEnd;
+    OpenTagStart: NodeTypes.OpenTagStart;
+    DoctypeOpen: NodeTypes.DoctypeOpen;
+    DoctypeAttribute: NodeTypes.DoctypeAttribute;
+    DoctypeClose: NodeTypes.DoctypeClose;
+    ScriptTag: NodeTypes.ScriptTag;
+    OpenScriptTagStart: NodeTypes.OpenScriptTagStart;
+    OpenScriptTagEnd: NodeTypes.OpenScriptTagEnd;
+    ScriptTagContent: NodeTypes.ScriptTagContent;
+    StyleTag: NodeTypes.StyleTag;
+    OpenStyleTagStart: NodeTypes.OpenStyleTagStart;
+    OpenStyleTagEnd: NodeTypes.OpenStyleTagEnd;
+    StyleTagContent: NodeTypes.StyleTagContent;
+    CloseStyleTag: NodeTypes.CloseStyleTag;
+    CloseScriptTag: NodeTypes.CloseScriptTag;
+    DoctypeAttributeValue: NodeTypes.DoctypeAttributeValue;
+    DoctypeAttributeWrapperStart: NodeTypes.DoctypeAttributeWrapperStart;
+    DoctypeAttributeWrapperEnd: NodeTypes.DoctypeAttributeWrapperEnd;
+    Program: string;
+};
+import { NodeTypes } from "es-html-parser";
+//# sourceMappingURL=node-types.d.ts.map

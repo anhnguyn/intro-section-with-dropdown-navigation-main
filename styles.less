@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+@almost-white: hsl(0, 0%, 98%);
+@medium-gray : hsl(0, 0%, 41%);
+@almost-black: hsl(0, 0%, 8%);
+@white: #fff;
+@off-white: #fafafa;
+@font-size-base: 18px;
+
+@dropdown-width: 116px;
+
+body {
+    margin: 0;
+    background-color: @off-white;
+    padding: 32px 40px 0;
+    font-family: "Epilogue", sans-serif;
+}
+
+.flex-align-center {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    flex: 1;
+}
+
+.dropdown {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    padding: 24px;
+    background-color: @white;
+    list-style-type: none;
+}
+
+
+.dropdown-item {
+    .item-icon {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        text-align: center;
+        img {
+            vertical-align: middle;
+        }
+    }
+    &:not(:last-of-type) {
+        margin-bottom: 12px;
+    }
+}

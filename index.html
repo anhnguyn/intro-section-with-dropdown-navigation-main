@@ -1,115 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- displays site properly based on user's device -->
-        <script src="script.js"></script>
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./images/favicon-32x32.png"
-        >
-        <link
-            rel="stylesheet/less"
-            type="text/css"
-            href="sty
-    les.less"
-        >
-        <script src="https://cdn.jsdelivr.net/npm/less"></script>
-        <title>Frontend Mentor | Intro section with dropdown navigation</title>
-    </head>
-    <body>
-        <header class="flex-align-center">
-            <img src="./images/logo.svg" alt="snap-logo">
-            <nav class="navbar flex-align-center">
-                <div>
-                    <button class="btn--tertiary" onclick="toggleMenu('feature-menu')">
-                        Features
-                    </button>
-                    <ul class="dropdown__menu" id="feature-menu">
-                        <li class="dropdown__item">
-                            <a href="">
-                                <div class="item__icon">
-                                    <img src="./images/icon-todo.svg" alt="todo">
-                                </div>
-                                Todo List
-                            </a>
-                        </li>
-                        <li class="dropdown__item">
-                            <a href="">
-                                <div class="item__icon">
-                                    <img src="./images/icon-calendar.svg" alt="calendar">
-                                </div>
-                                Calendar
-                            </a>
-                        </li>
-                        <li class="dropdown__item">
-                            <a href="">
-                                <div class="item__icon">
-                                    <img src="./images/icon-reminders.svg" alt="reminders">
-                                </div>
-                                Reminders
-                            </a>
-                        </li>
-                        <li class="dropdown__item">
-                            <a href="">
-                                <div class="item__icon">
-                                    <img src="./images/icon-planning.svg" alt="planning">
-                                </div>
-                                Planning
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <button onclick="toggleMenu('company-menu')" class="btn--tertiary">
-                        Company
-                    </button>
-                    <ul class="dropdown__menu" id="company-menu">
-                        <li>
-                            <a href="">History</a>
-                        </li>
-                        <li>
-                            <a href="">Our Team</a>
-                        </li>
-                        <li>
-                            <a href="">Blog</a>
-                        </li>
-                    </ul>
-                </div>
-                <a href="#">Careers</a>
-                <a href="#">About</a>
-            </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="script.js"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header>
+      <nav class="pc__nav">
+        <strong class="logo__text">snap</strong>
+        <nav class="nav">
+          <div class="nav__items">
+            <div class="dropdown">
+              <button class="btn btn--tertiary">
+                <span>Features</span>
+                <i class="icomoon-icon-arrow-up"></i>
+              </button>
+              <ul class="dropdown__menu">
+                <li class="dropdown__item">
+                  <i class="icomoon-icon-todo"></i>
+                  <a href=""> Todo List </a>
+                </li>
+                <li class="dropdown__item">
+                  <i class="icomoon-icon-calendar"></i>
+                  <a href=""> Calendar </a>
+                </li>
+                <li class="dropdown__item">
+                  <i class="icomoon-icon-reminders"></i>
+                  <a href=""> Reminders </a>
+                </li>
+                <li class="dropdown__item">
+                  <i class="icomoon-icon-planning"></i>
+                  <a href=""> Planning </a>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn--tertiary">
+                <span>Company</span>
+                <i class="icomoon-icon-arrow-up"></i>
+              </button>
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="">History</a>
+                </li>
+                <li>
+                  <a href="">Our Team</a>
+                </li>
+                <li>
+                  <a href="">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <a class="nav__link" href="#">Careers</a>
+            <a class="nav__link" href="#">About</a>
+          </div>
+          <div class="nav__btn">
+            <button class="btn btn--tertiary">Login</button>
+            <button class="btn btn--outline">Register</button>
+          </div>
+        </nav>
+      </nav>
+      <nav class="mobile__nav">
+        <strong class="logo__text">snap</strong>
+        <i class="icomoon-icon-menu"></i>
+        <nav class="nav__mobile">
+          <div class="menu__mobile">
+            <div class="nav__items">
+              <div class="dropdown">
+                <button class="btn btn--tertiary">
+                  <span>Features</span>
+                  <i class="icomoon-icon-arrow-up"></i>
+                </button>
+                <ul class="dropdown__menu">
+                  <li class="dropdown__item">
+                    <i class="icomoon-icon-todo"></i>
+                    <a href=""> Todo List </a>
+                  </li>
+                  <li class="dropdown__item">
+                    <i class="icomoon-icon-calendar"></i>
+                    <a href=""> Calendar </a>
+                  </li>
+                  <li class="dropdown__item">
+                    <i class="icomoon-icon-reminders"></i>
+                    <a href=""> Reminders </a>
+                  </li>
+                  <li class="dropdown__item">
+                    <i class="icomoon-icon-planning"></i>
+                    <a href=""> Planning </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn--tertiary">
+                  <span>Company</span>
+                  <i class="icomoon-icon-arrow-up"></i>
+                </button>
+                <ul class="dropdown__menu">
+                  <li>
+                    <a href="">History</a>
+                  </li>
+                  <li>
+                    <a href="">Our Team</a>
+                  </li>
+                  <li>
+                    <a href="">Blog</a>
+                  </li>
+                </ul>
+              </div>
+              <a class="nav__link" href="#">Careers</a>
+              <a class="nav__link" href="#">About</a>
+            </div>
+          </div>
+        </nav>
 
-            <div class="flex-align-center">
-                <button>Login</button>
-                <button>Register</button>
-            </div>
-        </header>
-        <main class="flex-align-center">
-            <div>
-                <h1>
-                    Make<br>remote work
-                </h1>
-                <p>
-                    Get your team in sync, no matter your location. Streamline processes,
-                    create team rituals, and watch productivity soar.
-                </p>
-                <button>Learn more</button>
-                <div>
-                    <img src="images/client-databiz.svg" alt="databiz">
-                    <img src="images/client-audiophile.svg" alt="audiophile">
-                    <img src="images/client-meet.svg" alt="meet">
-                    <img src="images/client-maker.svg" alt="maker">
-                </div>
-            </div>
-            <img
-                src="images/image-hero-desktop.png"
-                alt="image-hero"
-                width="480"
-            >
-        </main>
-    </body>
+        <div class="backdrop"></div>
+      </nav>
+    </header>
+    <main class="content">
+      <img
+        class="visible-xs"
+        src="images/image-hero-mobile.png"
+        alt="image-hero"
+        width="480"
+      />
+      <div>
+        <h1 class="hero__heading">Make <br class="hidden-xs"/>remote work</h1>
+        <p class="hero__para">
+          Get your team in sync, no matter your location.<br class="hidden-xs"/>
+          Streamline processes, create team rituals, and watch productivity soar.
+        </p>
+        <button class="btn btn--fill">Learn more</button>
+        <div class="hero__logos">
+          <img src="images/client-databiz.svg" alt="databiz" />
+          <img src="images/client-audiophile.svg" alt="audiophile" />
+          <img src="images/client-meet.svg" alt="meet" />
+          <img src="images/client-maker.svg" alt="maker" />
+        </div>
+      </div>
+        <img
+        class="hidden-xs"
+        src="images/image-hero-desktop.png"
+        alt="image-hero"
+        width="480"
+      />
+    </main>
+  </body>
 </html>
